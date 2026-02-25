@@ -28,4 +28,4 @@ nav_order: 5
 
 上記で問題が解決しない場合は、お気軽にDiscordのDMまでご連絡ください。不具合の報告や質問など、何でもお受けしています。
 
-👉 [DiscordでDMを送る](http://discord.com/users/361167004217901066)
+👉 [DiscordでDMを送る](http://discord.com/users/361167004217901066){:target="_blank"}
