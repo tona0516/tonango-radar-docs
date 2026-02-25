@@ -19,7 +19,9 @@ TonangoRadarは、[World of Warships](https://worldofwarships.com/){:target="_bl
 
 マップ読み込み完了から約5秒でプレイヤーの統計情報が表示されます。
 
-※通信速度やデータ参照元であるWargaming API（以下WG API）のパフォーマンスに影響されます。
+<div class="note" markdown="1">
+通信速度やデータ参照元であるWargaming API（以下WG API）のパフォーマンスに影響されます。
+</div>
 
 以下の方法で高速な読み込みを実現しています。
 

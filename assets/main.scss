@@ -1,0 +1,315 @@
+--- --- @import "minima";
+
+/* ===========================
+   TonangoRadar カスタムスタイル
+   =========================== */
+
+:root {
+    --accent: #2563eb;
+    --accent-light: #dbeafe;
+    --accent-dark: #1d4ed8;
+    --surface: #f8fafc;
+    --surface-border: #e2e8f0;
+    --text-muted: #64748b;
+    --radius: 8px;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- 全体 ---------- */
+body {
+    font-feature-settings: "palt";
+    -webkit-font-smoothing: antialiased;
+}
+
+.page-content {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+/* ---------- ヘッダー ---------- */
+.site-header {
+    border-top: 3px solid var(--accent);
+    border-bottom: 1px solid var(--surface-border);
+    background: #fff;
+}
+
+.site-title,
+.site-title:visited {
+    color: #1e293b !important;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+/* ---------- ナビゲーションリンク ---------- */
+.site-nav .page-link {
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.site-nav .page-link:hover {
+    color: var(--accent);
+}
+
+/* ---------- 見出し ---------- */
+.post-title,
+.page-content h1 {
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 0.4em;
+}
+
+.page-content h2 {
+    font-weight: 700;
+    color: #1e293b;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid var(--accent-light);
+    margin-top: 2.2em;
+    margin-bottom: 0.8em;
+}
+
+.page-content h3 {
+    font-weight: 600;
+    color: #334155;
+    margin-top: 1.6em;
+    margin-bottom: 0.5em;
+}
+
+/* ---------- リンク ---------- */
+.page-content a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.page-content a:hover {
+    color: var(--accent-dark);
+    border-bottom-color: var(--accent-dark);
+}
+
+/* ---------- 画像 ---------- */
+.page-content img {
+    max-width: 100%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    margin: 1.5em 0;
+}
+
+/* ---------- リスト ---------- */
+.page-content ul,
+.page-content ol {
+    padding-left: 1.5em;
+}
+
+.page-content li {
+    margin-bottom: 0.35em;
+    line-height: 1.75;
+}
+
+/* ---------- コード ---------- */
+.page-content code {
+    background: var(--surface);
+    border: 1px solid var(--surface-border);
+    border-radius: 4px;
+    padding: 0.15em 0.4em;
+    font-size: 0.88em;
+    color: #be185d;
+}
+
+/* ---------- ヒーローセクション (トップ) ---------- */
+.hero {
+    text-align: center;
+    padding: 3em 1em 2em;
+}
+
+.hero h1 {
+    font-size: 2.2em;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 0.3em;
+}
+
+.hero .lead {
+    font-size: 1.15em;
+    color: var(--text-muted);
+    margin-bottom: 2em;
+}
+
+/* ---------- 目次カード ---------- */
+.toc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+    margin-top: 1em;
+}
+
+.toc-card {
+    display: block;
+    background: #fff;
+    border: 1px solid var(--surface-border);
+    border-radius: var(--radius);
+    padding: 1.2em 1.4em;
+    text-decoration: none !important;
+    color: #1e293b !important;
+    transition: box-shadow 0.2s, transform 0.15s, border-color 0.2s;
+    border-bottom: none !important;
+}
+
+.toc-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    border-color: var(--accent);
+}
+
+.toc-card .toc-number {
+    display: inline-block;
+    background: var(--accent-light);
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.85em;
+    border-radius: 4px;
+    padding: 0.1em 0.55em;
+    margin-bottom: 0.5em;
+}
+
+.toc-card .toc-title {
+    display: block;
+    font-weight: 600;
+    font-size: 1.05em;
+    margin-bottom: 0.25em;
+}
+
+.toc-card .toc-desc {
+    font-size: 0.88em;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* ---------- 補足ボックス ---------- */
+.note {
+    background: var(--accent-light);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 0.9em 1.2em;
+    margin: 1.2em 0;
+    font-size: 0.92em;
+    color: #1e40af;
+}
+
+.note::before {
+    content: "💡 ";
+}
+
+.warning {
+    background: #fef3c7;
+    border-left: 4px solid #f59e0b;
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 0.9em 1.2em;
+    margin: 1.2em 0;
+    font-size: 0.92em;
+    color: #92400e;
+}
+
+.warning::before {
+    content: "⚠️ ";
+}
+
+/* ---------- ボタンリンク ---------- */
+.btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff !important;
+    font-weight: 600;
+    padding: 0.65em 1.6em;
+    border-radius: var(--radius);
+    text-decoration: none !important;
+    border-bottom: none !important;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: var(--shadow-sm);
+}
+
+.btn:hover {
+    background: var(--accent-dark);
+    box-shadow: var(--shadow-md);
+    color: #fff !important;
+    border-bottom: none !important;
+}
+
+/* ---------- ステップリスト ---------- */
+.steps {
+    counter-reset: step-counter;
+    list-style: none;
+    padding-left: 0;
+}
+
+.steps li {
+    counter-increment: step-counter;
+    position: relative;
+    padding-left: 2.8em;
+    margin-bottom: 1em;
+}
+
+.steps li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 0.05em;
+    width: 2em;
+    height: 2em;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.85em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------- FAQ スタイル ---------- */
+.faq-item {
+    background: var(--surface);
+    border: 1px solid var(--surface-border);
+    border-radius: var(--radius);
+    padding: 1.2em 1.4em;
+    margin-bottom: 1em;
+}
+
+.faq-item h3,
+.faq-item h2 {
+    border-bottom: none;
+    margin-top: 0;
+    padding-bottom: 0;
+    font-size: 1.05em;
+    color: #0f172a;
+}
+
+.faq-item h3::before,
+.faq-item h2::before {
+    content: "Q. ";
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.faq-item p,
+.faq-item ul {
+    margin-bottom: 0;
+}
+
+/* ---------- フッター ---------- */
+.site-footer {
+    border-top: 1px solid var(--surface-border);
+    background: var(--surface);
+}
+
+/* ---------- レスポンシブ ---------- */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 1.6em;
+    }
+
+    .toc-grid {
+        grid-template-columns: 1fr;
+    }
+}
