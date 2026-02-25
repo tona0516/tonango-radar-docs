@@ -39,6 +39,8 @@ TonangoRadarは、[World of Warships](https://worldofwarships.com/){:target="_bl
 
 味方チームと敵チームの平均値を比較するチーム比較機能があります。
 
+![チーム比較]({{ '/team_average.png' | relative_url }})
+
 ### 艦艇別・全体の統計
 
 艦艇別・全体の統計をそれぞれ確認できます。
