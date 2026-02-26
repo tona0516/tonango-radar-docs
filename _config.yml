@@ -19,9 +19,6 @@
 # in the templates via {{ site.myvariable }}.
 
 title: TonangoRadar ユーザマニュアル
-description: >-
-  TonangoRadar のユーザマニュアルです。
-  インストール方法、初期設定、基本的な使い方などを解説します。
 lang: ja
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
