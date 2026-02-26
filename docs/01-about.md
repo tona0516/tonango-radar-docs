@@ -17,7 +17,7 @@ TonangoRadarは、[World of Warships](https://worldofwarships.com/){:target="_bl
 
 ### ⚡ 高速表示
 
-マップ読み込み完了から**約5秒**でプレイヤーの統計情報が表示されます。
+マップ読み込み完了から**6~7秒**でプレイヤーの統計情報が表示されます。
 
 > ※通信速度やデータ参照元であるWargaming API（以下WG API）のパフォーマンスに影響されます。
 
@@ -36,6 +36,8 @@ TonangoRadarは、[World of Warships](https://worldofwarships.com/){:target="_bl
 ### ⚔️ チーム比較
 
 味方チームと敵チームの平均値を比較するチーム比較機能があります。PR、ダメージ、勝率、戦闘数をグラフで一目瞭然に確認できます。
+
+![TonangoRadar チーム比較]({{ '/team_average.png' | relative_url }})
 
 ### 📈 艦艇別・全体の統計
 
