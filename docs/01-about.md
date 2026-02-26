@@ -5,7 +5,8 @@ permalink: /about/
 nav_order: 1
 ---
 
-TonangoRadarは、[World of Warships](https://worldofwarships.com/){:target="_blank"}（WoWS）プレイヤー向けのデスクトップアプリケーションです。マッチ中のプレイヤー戦績をリアルタイムで確認でき、より戦略的なプレイを実現します。
+TonangoRadarは、[World of Warships](https://worldofwarships.com/){:target="_blank"}（WoWS）プレイヤー向けのデスクトップアプリケーションです。
+マッチ中のプレイヤー戦績をリアルタイムで確認でき、より戦略的なプレイを実現します。
 
 ![TonangoRadar メイン画面]({{ '/main_page_mosaicked.png' | relative_url }})
 
@@ -13,7 +14,7 @@ TonangoRadarは、[World of Warships](https://worldofwarships.com/){:target="_bl
 
 ### 🔍 マッチ自動検出
 
-マッチ開始時にリプレイファイルを自動検出し、参加プレイヤー全員の戦績を表示します。手動操作は不要で、ゲームの邪魔になりません。
+マッチ開始時にリプレイファイルを自動検出し、参加プレイヤー全員の戦績を表示します。基本的に手動操作は不要で、ゲームの邪魔になりません。
 
 ### ⚡ 高速表示
 
@@ -40,6 +41,6 @@ TonangoRadarは、[World of Warships](https://worldofwarships.com/){:target="_bl
 ![TonangoRadar チーム比較]({{ '/team_average.png' | relative_url }})
 
 ### 🛠️ 容易なセットアップ
-- **ランタイム不要**：Node.js や Python 等のランタイムを別途インストールする必要がありません。
-- **Application ID 不要**：WG API の Application ID の取得は必要ありません。
-- **インストーラで簡単導入**：提供するインストーラを実行するだけでインストールが完了します。
+- **ランタイム不要**：Node.js や Python 等のランタイムを別途インストールする必要がありません
+- **Application ID 不要**：WG API の Application ID の取得は必要ありません
+- **インストーラで簡単導入**：提供するインストーラを実行するだけでインストールが完了します

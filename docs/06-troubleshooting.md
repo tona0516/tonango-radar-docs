@@ -2,7 +2,7 @@
 layout: page
 title: トラブルシューティング
 permalink: /troubleshooting/
-nav_order: 5
+nav_order: 6
 ---
 
 お困りの場合は、以下の項目をご確認ください。
