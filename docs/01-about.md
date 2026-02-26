@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: TonangoRadarとは
 permalink: /about/
 nav_order: 1

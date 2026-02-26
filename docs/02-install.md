@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: インストール
 permalink: /install/
 nav_order: 2

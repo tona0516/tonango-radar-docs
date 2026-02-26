@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: トラブルシューティング
 permalink: /troubleshooting/
 nav_order: 6

@@ -25,9 +25,19 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 username: tonango
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+theme: just-the-docs
+
+color_scheme: light
+
+# Footer content
+footer_content: "&copy; 2025 tonango"
+
+# Enable search
+search_enabled: true
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "トップに戻る"
 
 sass:
   quiet_deps: true

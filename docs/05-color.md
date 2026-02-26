@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: 表示色について
 permalink: /color/
 nav_order: 5

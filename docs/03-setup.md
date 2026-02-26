@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: 初期設定
 permalink: /setup/
 nav_order: 3
