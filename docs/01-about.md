@@ -19,13 +19,13 @@ TonangoRadarは、[World of Warships](https://worldofwarships.com/){:target="_bl
 
 マップ読み込み完了から**6~7秒**でプレイヤーの統計情報が表示されます。
 
-> ※通信速度やデータ参照元であるWargaming API（以下WG API）のパフォーマンスに影響されます。
+> ※通信速度やデータ取得元の [Wargaming API](https://developers.wargaming.net/)（WG API）のパフォーマンスに影響されます。
 
 以下の技術で高速な読み込みを実現しています。
 
-- **WG APIへの並列リクエスト** — 複数のAPIコールを同時に実行
-- **非戦闘データのキャッシュ** — 取得済みデータを再利用
-- **Go言語によるバックエンド実装** — 高い並行処理性能
+- **WG APIへの並列リクエスト**：複数のAPIコールを同時に実行
+- **非戦闘データのキャッシュ**：取得済みデータを再利用
+- **Go言語によるバックエンド実装**：高い並行処理性能
 
 ### 📊 多彩な表示項目
 
@@ -39,10 +39,7 @@ TonangoRadarは、[World of Warships](https://worldofwarships.com/){:target="_bl
 
 ![TonangoRadar チーム比較]({{ '/team_average.png' | relative_url }})
 
-### 📈 艦艇別・全体の統計
-
-艦艇別・全体の統計をそれぞれ確認できます。プレイヤーの得意な艦艇をすばやく把握できます。
-
-### 🖥️ Windows対応
-
-Windowsで動作します。
+### 🛠️ 容易なセットアップ
+- **ランタイム不要**：Node.js や Python 等のランタイムを別途インストールする必要がありません。
+- **Application ID 不要**：WG API の Application ID の取得は必要ありません。
+- **インストーラで簡単導入**：提供するインストーラを実行するだけでインストールが完了します。
