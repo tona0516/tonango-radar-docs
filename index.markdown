@@ -1,6 +1,7 @@
 ---
 layout: default
 title: ホーム
+description: TonangoRadar（World of Warships向け戦績レーダーアプリ）の公式ユーザマニュアル。インストール、初期設定、使い方、表示色、トラブル対応を解説。
 nav_order: 0
 permalink: /
 ---

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: インストール
+description: TonangoRadarの動作環境とWindows向けインストール手順（ダウンロードから導入まで）を説明します。
 permalink: /install/
 nav_order: 2
 ---

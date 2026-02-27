@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 基本的な使い方
+description: マッチ検出から統計画面・プレイヤー/艦艇詳細・カスタマイズまで、TonangoRadarの基本操作を説明します。
 permalink: /usage/
 nav_order: 4
 ---

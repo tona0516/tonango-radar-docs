@@ -1,6 +1,7 @@
 ---
 layout: default
 title: TonangoRadarとは
+description: TonangoRadarの概要と主な機能（マッチ自動検出、戦績表示、チーム比較など）を紹介します。
 permalink: /about/
 nav_order: 1
 ---

@@ -18,16 +18,40 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: TonangoRadar ユーザマニュアル
-lang: ja
+title: TonangoRadar - The XVM for World of Warships
+description: >-
+  World of Warships向け戦績レーダーアプリ「TonangoRadar」の公式ユーザマニュアル。
+  インストール、初期設定、使い方、表示色、トラブルシューティングを掲載。
+lang: ja-JP
 baseurl: "/tonango-radar-docs" # the subpath of your site, e.g. /blog
 url: "https://tona0516.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 username: tonango
 
+author:
+  name: tonango
+  url: https://github.com/tona0516
+
+social:
+  links:
+    - https://github.com/tona0516
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /assets/img/ogp.png
+        height: 630
+        width: 1200
+        alt: TonangoRadar ユーザマニュアル
+
+twitter:
+  card: summary_large_image
+
 # Build settings
 theme: just-the-docs
 
-color_scheme: light
+color_scheme: dark
 
 # Footer content
 footer_content: "&copy; 2025 tonango"
@@ -38,6 +62,7 @@ search_enabled: true
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Back to top link
 back_to_top: true

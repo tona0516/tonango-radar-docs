@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 初期設定
+description: 初回起動時の設定手順（WoWSクライアントパス、サーバー設定など）を画像付きで解説します。
 permalink: /setup/
 nav_order: 3
 ---

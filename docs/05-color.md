@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 表示色について
+description: Personal Rating（PR）・ダメージ・勝率の色分けルールと、しきい値・カラーコードの対応表を掲載します。
 permalink: /color/
 nav_order: 5
 ---

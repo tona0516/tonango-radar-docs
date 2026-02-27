@@ -1,6 +1,7 @@
 ---
 layout: default
 title: トラブルシューティング
+description: マッチが検出されない、データが表示されない等のよくある問題の原因と対処方法をまとめます。
 permalink: /troubleshooting/
 nav_order: 6
 ---

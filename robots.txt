@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tona0516.github.io/tonango-radar-docs/sitemap.xml
