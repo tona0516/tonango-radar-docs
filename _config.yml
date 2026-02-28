@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: TonangoRadar - The XVM for World of Warships
+title: TonangoRadar
 description: >-
   World of Warships向け戦績レーダーアプリ「TonangoRadar」の公式ユーザマニュアル。
   インストール、初期設定、使い方、表示色、トラブルシューティングを掲載。
@@ -40,7 +40,7 @@ defaults:
       path: ""
     values:
       image:
-        path: /assets/img/ogp.webp
+        path: /assets/img/appicon.webp
         height: 630
         width: 1200
         alt: TonangoRadar ユーザマニュアル
@@ -51,13 +51,17 @@ twitter:
 # Build settings
 theme: just-the-docs
 
-color_scheme: dark
+color_scheme: light
+
+# Navbar/Sidebar site title icon (Just the Docs)
+logo: "/assets/img/appicon.webp"
+logo_alt: "TonangoRadar"
 
 # Footer content
 footer_content: "&copy; 2025 tonango"
 
 # Enable search
-search_enabled: true
+search_enabled: false
 
 plugins:
   - jekyll-feed

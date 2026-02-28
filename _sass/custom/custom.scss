@@ -1,0 +1,13 @@
+.site-title {
+    gap: $sp-2;
+}
+
+.site-title .site-logo {
+    flex: 0 0 auto;
+    width: $sp-6;
+    height: $sp-6;
+}
+
+.site-title .site-title-text {
+    white-space: nowrap;
+}
