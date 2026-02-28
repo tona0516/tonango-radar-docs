@@ -40,7 +40,7 @@ defaults:
       path: ""
     values:
       image:
-        path: /assets/img/ogp.png
+        path: /assets/img/ogp.webp
         height: 630
         width: 1200
         alt: TonangoRadar ユーザマニュアル

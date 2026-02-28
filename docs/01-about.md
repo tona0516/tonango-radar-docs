@@ -9,7 +9,7 @@ nav_order: 1
 TonangoRadarは、[World of Warships](https://worldofwarships.com/){:target="_blank"}（WoWS）プレイヤー向けのデスクトップアプリケーションです。
 マッチ中のプレイヤー戦績をリアルタイムで確認でき、より戦略的なプレイを実現します。
 
-![TonangoRadar メイン画面]({{ '/main_page_mosaicked.png' | relative_url }})
+![TonangoRadar メイン画面]({{ '/assets/img/main_page_mosaicked.webp' | relative_url }})
 
 ## ✨ 主な特徴
 
@@ -39,7 +39,7 @@ TonangoRadarは、[World of Warships](https://worldofwarships.com/){:target="_bl
 
 味方チームと敵チームの平均値を比較するチーム比較機能があります。PR、ダメージ、勝率、戦闘数をグラフで一目瞭然に確認できます。
 
-![TonangoRadar チーム比較]({{ '/team_average.png' | relative_url }})
+![TonangoRadar チーム比較]({{ '/assets/img/team_average.webp' | relative_url }})
 
 ### 🛠️ 容易なセットアップ
 - **ランタイム不要**：Node.js や Python 等のランタイムを別途インストールする必要がありません

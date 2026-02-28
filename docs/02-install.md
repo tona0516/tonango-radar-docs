@@ -21,7 +21,7 @@ nav_order: 2
 3. 画面の指示に従いインストールを完了してください
 4. インストール完了後、デスクトップにショートカットが作成されます
 
-![TonangoRadar ショートカット]({{ '/shortcut.png' | relative_url }})
+![TonangoRadar ショートカット]({{ '/assets/img/shortcut.webp' | relative_url }})
 
 ---
 
