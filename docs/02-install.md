@@ -6,6 +6,8 @@ permalink: /install/
 nav_order: 2
 ---
 
+# インストール・アップデート
+
 ## 💻 動作環境
 
 | 項目 | 要件 |

@@ -6,6 +6,8 @@ permalink: /troubleshooting/
 nav_order: 8
 ---
 
+# トラブルシューティング
+
 お困りの場合は、以下の項目をご確認ください。
 
 ## ❌ マッチが検出されない

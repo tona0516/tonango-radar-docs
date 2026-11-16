@@ -6,6 +6,8 @@ permalink: /about/
 nav_order: 1
 ---
 
+# TonangoRadarとは
+
 TonangoRadarは、[World of Warships](https://worldofwarships.com/){:target="_blank"}（WoWS）プレイヤー向けのデスクトップアプリケーションです。
 マッチ中のプレイヤー戦績をリアルタイムで確認でき、より戦略的なプレイを実現します。
 

@@ -1,13 +1,239 @@
+// ==========================================================================
+// TonangoRadar Design System Theme Overrides (Naval Tactical HUD)
+// ==========================================================================
+
+:root {
+  --tr-bg-base: #0b1118;
+  --tr-bg-panel: #111a24;
+  --tr-bg-elevated: #1a2634;
+  --tr-bg-row-alt: #0e1620;
+  --tr-bg-row-hover: #162230;
+  --tr-border: #223244;
+  --tr-border-strong: #334b63;
+  --tr-text: #e2e8f0;
+  --tr-text-heading: #f1f5f9;
+  --tr-text-muted: #8fa3b8;
+  --tr-primary: #0ea5e9;
+  --tr-secondary: #38bdf8;
+  --tr-secondary-hover: #7dd3fc;
+  --tr-gold: #d4af37;
+}
+
+// テキスト選択・フォーカス
+::selection {
+  background-color: rgba(14, 165, 233, 0.35);
+  color: #f8fafc;
+}
+
+:focus-visible {
+  outline: 1px solid var(--tr-primary);
+  outline-offset: 1px;
+}
+
+// サイトロゴ・タイトル
 .site-title {
-    gap: $sp-2;
+  gap: $sp-2;
+  color: var(--tr-text-heading);
+  font-size: 1.125rem !important;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0;
 }
 
 .site-title .site-logo {
-    flex: 0 0 auto;
-    width: $sp-6;
-    height: $sp-6;
+  flex: 0 0 auto;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 4px;
 }
 
 .site-title .site-title-text {
-    white-space: nowrap;
+  white-space: nowrap;
+}
+
+// サイドバー & ナビゲーション
+.side-bar {
+  background-color: var(--tr-bg-panel);
+  border-color: var(--tr-border);
+}
+
+.site-header {
+  border-bottom-color: var(--tr-border);
+}
+
+.nav-list .nav-list-item .nav-list-link {
+  color: #cbd5e1;
+  transition: color 0.15s ease, background-color 0.15s ease;
+
+  &:hover {
+    color: var(--tr-secondary);
+    background-image: linear-gradient(
+      -90deg,
+      rgba(26, 38, 52, 0.95) 0%,
+      rgba(26, 38, 52, 0.7) 85%,
+      rgba(26, 38, 52, 0) 100%
+    );
+  }
+
+  &.active {
+    color: var(--tr-secondary);
+    box-shadow: inset 3px 0 0 var(--tr-primary);
+    background-image: linear-gradient(
+      -90deg,
+      rgba(14, 165, 233, 0.16) 0%,
+      rgba(14, 165, 233, 0.08) 85%,
+      rgba(14, 165, 233, 0) 100%
+    );
+  }
+}
+
+.site-footer {
+  color: var(--tr-text-muted);
+}
+
+// メインヘッダ（検索無効時でも境界を馴染ませる）
+.main-header {
+  background-color: var(--tr-bg-base);
+  border-bottom-color: var(--tr-border);
+}
+
+// メインコンテンツ内の見出し・リンク・装飾
+.main-content {
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--tr-text-heading);
+    font-weight: 600;
+  }
+
+  h1 {
+    padding-bottom: 0.45rem;
+    border-bottom: 1px solid var(--tr-border);
+  }
+
+  h2 {
+    margin-top: 2rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid var(--tr-border);
+  }
+
+  a:not([class]) {
+    color: var(--tr-secondary);
+    text-decoration-color: rgba(56, 189, 248, 0.4);
+
+    &:hover {
+      color: var(--tr-secondary-hover);
+      text-decoration-color: var(--tr-secondary-hover);
+    }
+  }
+
+  strong {
+    color: #f8fafc;
+  }
+
+  // 引用ブロック (HUD パネルスタイル: 補足・注意事項向け)
+  blockquote {
+    margin: 1rem 0;
+    padding: 0.75rem 1rem;
+    background-color: var(--tr-bg-panel);
+    border: 1px solid var(--tr-border);
+    border-left: 3px solid var(--tr-primary);
+    border-radius: 2px;
+    color: #cbd5e1;
+
+    > p:first-child {
+      margin-top: 0;
+    }
+
+    > p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // テーブル (戦績テーブル風のシャープな HUD スタイル)
+  .table-wrapper {
+    border: 1px solid var(--tr-border);
+    border-radius: 2px;
+    box-shadow: none;
+    background-color: var(--tr-bg-panel);
+  }
+
+  table {
+    font-variant-numeric: tabular-nums;
+  }
+
+  th,
+  td {
+    border-bottom-color: var(--tr-border);
+    border-left-color: var(--tr-border);
+  }
+
+  thead th {
+    background-color: var(--tr-bg-elevated);
+    color: var(--tr-text-heading);
+    font-weight: 600;
+    border-bottom: 1px solid var(--tr-border-strong);
+  }
+
+  tbody tr:nth-child(even) td {
+    background-color: var(--tr-bg-row-alt);
+  }
+
+  tbody tr:hover td {
+    background-color: var(--tr-bg-row-hover);
+  }
+
+  // 画像（ダークスクリーンショットが背景に溶け込まないよう枠線を付与）
+  img {
+    border: 1px solid var(--tr-border-strong);
+    border-radius: 2px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+  }
+}
+
+// インラインコード・コードブロック
+:not(pre, figure) > code {
+  padding: 0.15em 0.4em;
+  background-color: #162230;
+  border: 1px solid #2a3d52;
+  border-radius: 2px;
+  color: #7dd3fc;
+}
+
+div.highlighter-rouge div.highlight,
+div.listingblock div.content,
+figure.highlight pre,
+figure.highlight :not(pre) > code {
+  border: 1px solid var(--tr-border);
+  border-radius: 2px;
+  background-color: var(--tr-bg-panel);
+}
+
+// 水平線・フッターリンク
+hr {
+  background-color: var(--tr-border);
+}
+
+.back-to-top {
+  color: var(--tr-secondary);
+}
+
+// スクロールバー (対応ブラウザ向け)
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--tr-bg-base);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--tr-border-strong);
+  border-radius: 2px;
+
+  &:hover {
+    background: #476582;
+  }
 }

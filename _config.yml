@@ -51,7 +51,7 @@ twitter:
 # Build settings
 theme: just-the-docs
 
-color_scheme: light
+color_scheme: tonango
 
 # Navbar/Sidebar site title icon (Just the Docs)
 logo: "/assets/img/appicon.webp"

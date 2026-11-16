@@ -1,0 +1,28 @@
+// TonangoRadar カスタムセットアップ変数
+// support/_variables.scss の直後、color_schemes と modules の前に読み込まれます。
+
+$body-font-family:
+  "BIZ UDPGothic",
+  "Hiragino Kaku Gothic ProN",
+  "Hiragino Sans",
+  "Yu Gothic UI",
+  "Meiryo",
+  system-ui,
+  -apple-system,
+  blinkmacsystemfont,
+  "Segoe UI",
+  sans-serif;
+
+$mono-font-family:
+  "SFMono-Regular",
+  "Cascadia Code",
+  "JetBrains Mono",
+  menlo,
+  consolas,
+  monospace;
+
+// TonangoRadar のシャープなデスクトップ UI に合わせた角丸 (2px)
+$border-radius: 2px;
+
+// 日本語ドキュメント向けの読みやすい行間
+$content-line-height: 1.7;

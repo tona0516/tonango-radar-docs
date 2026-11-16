@@ -1,0 +1,32 @@
+// TonangoRadar カラースキーム (Naval Tactical HUD - WoWS Tactical Navy)
+// 本体アプリ frontend/src/style.css の [data-theme="dark"] トークンに準拠
+
+$color-scheme: dark;
+
+// ベース背景・テキスト
+$body-background-color: #0b1118;       // --color-base-100
+$sidebar-color: #111a24;               // --color-base-200
+$body-heading-color: #f1f5f9;          // 見出し用の明るいスレートホワイト
+$body-text-color: #e2e8f0;             // --color-base-content
+
+// リンク・ナビゲーション
+$link-color: #38bdf8;                  // --color-secondary (ダーク背景向け高コントラストシアン)
+$nav-child-link-color: #8fa3b8;        // --hud-muted
+
+// ボタン・コントロール
+$base-button-color: #1a2634;           // --color-base-300
+$btn-primary-color: #0284c7;           // --color-info
+
+// コード・テーブル・検索・フィードバック
+$code-background-color: #111a24;       // --color-base-200
+$code-linenumber-color: #8fa3b8;       // --hud-muted
+$feedback-color: #1a2634;              // --color-base-300
+$table-background-color: #111a24;      // --color-base-200
+$search-background-color: #111a24;     // --color-base-200
+$search-result-preview-color: #8fa3b8; // --hud-muted
+
+// ボーダー・ミュートテキスト（一部モジュールが直接参照するグレー変数も調和させる）
+$border-color: #223244;                // --hud-border
+$grey-dk-000: #8fa3b8;                 // --hud-muted (リストマーカー・パンくず区切り等)
+
+@import "./vendor/accessible-pygments/github-dark";
