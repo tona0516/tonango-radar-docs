@@ -8,7 +8,7 @@ nav_order: 2
 
 # インストール・アップデート
 
-## 💻 動作環境
+## {% include icon.html name="monitor" %} 動作環境
 
 | 項目 | 要件 |
 |------|------|
@@ -16,16 +16,16 @@ nav_order: 2
 | World of Warships クライアント | Game Center もしくは Steam 経由でのインストール |
 | その他 | インターネット接続 |
 
-## 🚀 新規インストール手順
+## {% include icon.html name="download" %} 新規インストール手順
 
-1. [ダウンロードページ（Google Drive）](https://drive.google.com/drive/folders/1CoVadYdK-zhtJcM2-O9qBCmRSSbC_dLm?usp=sharing){:target="_blank"}を開き、最新版のインストーラ（`TonangoRadar-vX.Y.Z-amd64-installer.exe`）をダウンロードします
+1. [ダウンロードページ（Google Drive）](https://drive.google.com/drive/folders/1CoVadYdK-zhtJcM2-O9qBCmRSSbC_dLm?usp=sharing){:target="_blank"}を開き、最新版のインストーラ（`TonangoRadar-<バージョン>-amd64-installer.exe`）をダウンロードします
 2. ダウンロードしたインストーラを実行します
 3. 画面の指示に従いインストールを完了してください
 4. インストール完了後、デスクトップにショートカットが作成されます
 
 ![TonangoRadar ショートカット]({{ '/assets/img/shortcut.webp' | relative_url }})
 
-## 🔄 アップデート手順
+## {% include icon.html name="refresh-cw" %} アップデート手順
 
 ### アプリ内自動アップデート（推奨）
 
@@ -34,7 +34,7 @@ nav_order: 2
 ![新バージョン通知バナー]({{ '/assets/img/new_release.webp' | relative_url }})
 
 1. 左端サイドメニューの「**設定**」アイコンに赤い通知バッジが表示されます
-2. 「設定」画面を開くと、上部に「**新しいバージョン X.Y.Z が利用可能です。**」という通知バナーが表示されます
+2. 「設定」画面を開くと、上部に「**新しいバージョン vX.Y.Z が利用可能です。**」という通知バナーが表示されます
 3. 「**今すぐ更新**」ボタンをクリックします
 4. 最新版のダウンロードおよびチェックサム（SHA-256）検証が完了すると、アプリが一度終了し、自動で最新版へ置き換わって再起動します
 
@@ -42,4 +42,4 @@ nav_order: 2
 
 ---
 
-インストールが完了したら、次は[⚙️ 初期設定]({{ site.baseurl }}/setup/)を行いましょう。
+インストールが完了したら、次は[{% include icon.html name="settings" %} 初期設定]({{ site.baseurl }}/setup/)を行いましょう。

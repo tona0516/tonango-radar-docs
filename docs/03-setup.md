@@ -13,7 +13,7 @@ nav_order: 3
 
 ![TonangoRadar セットアップ1]({{ '/assets/img/setup_01.webp' | relative_url }})
 
-## 📁 ゲームクライアントパス設定（必須）
+## {% include icon.html name="folder-open" %} ゲームクライアントパス設定（必須）
 
 「ゲームクライアントパス設定」欄の「**フォルダ選択**」をクリックし、`WorldOfWarships.exe` があるフォルダを選択します。
 
@@ -24,7 +24,7 @@ nav_order: 3
 
 ゲームクライアントパス設定に成功すると、画面右上に通知が表示されます。
 
-## 🌐 全体設定
+## {% include icon.html name="globe" %} 全体設定
 
 続いて「全体設定」で以下の項目を確認・設定してください。
 
@@ -35,14 +35,14 @@ nav_order: 3
 
 > ※「全体設定」の変更は**変更後の戦闘から有効**になります。現在のマッチ中には反映されません。
 
-## ✅ 設定完了の確認
+## {% include icon.html name="circle-check" %} 設定完了の確認
 
 左端サイドメニューの「**戦闘**」をクリックして元の画面に戻り、「**戦闘待機中**」および待機メッセージが表示されていれば初期設定は完了です。
 
 ![TonangoRadar セットアップ3]({{ '/assets/img/setup_03.webp' | relative_url }})
 
-> 💡 待機画面上部の「**サンプル表示で調整**」ボタンを使うと、試合を始める前にサンプルデータでレイアウトや表示項目の調整を行えます。
+> {% include icon.html name="lightbulb" %} 待機画面上部の「**サンプル表示で調整**」ボタンを使うと、試合を始める前にサンプルデータでレイアウトや表示項目の調整を行えます。
 
 ---
 
-設定が完了したら、[🎮 基本的な使い方]({{ site.baseurl }}/usage/)を確認しましょう。
+設定が完了したら、[{% include icon.html name="compass" %} 基本的な使い方]({{ site.baseurl }}/usage/)を確認しましょう。

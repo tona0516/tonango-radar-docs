@@ -13,15 +13,15 @@ TonangoRadarは、[World of Warships](https://worldofwarships.com/){:target="_bl
 
 ![TonangoRadar メイン画面]({{ '/assets/img/main_page_mosaicked.webp' | relative_url }})
 
-## ✨ 主な特徴
+## {% include icon.html name="sparkles" %} 主な特徴
 
-### 🔍 マッチ自動検出・クラン戦クロスリージョン対応
+### {% include icon.html name="radar" %} マッチ自動検出・クラン戦クロスリージョン対応
 
 マッチ開始時にリプレイ情報ファイル（`tempArenaInfo.json`）を自動検出し、NPC（ボット）を除いた参加プレイヤー全員の戦績を表示します。基本的に手動操作は不要で、ゲームの邪魔になりません。
 
 また、**クラン戦**では味方サーバーの設定にかかわらず、敵チームの所属リージョン（Asia / EU / NA）を全リージョンから自動判別して戦績を取得します。
 
-### ⚡ 段階的な高速表示
+### {% include icon.html name="zap" %} 段階的な高速表示
 
 対戦を検知すると、以下の3段階で画面を順次更新します。
 
@@ -38,7 +38,7 @@ TonangoRadarは、[World of Warships](https://worldofwarships.com/){:target="_bl
 
 > ※通信環境やデータ取得元の [Wargaming API](https://developers.wargaming.net/){:target="_blank"}（WG API）の応答状況により読み込み時間は変動します。
 
-### 📊 多彩な表示項目と柔軟なレイアウト
+### {% include icon.html name="chart-column" %} 多彩な表示項目と柔軟なレイアウト
 
 そのプレイヤーの平均ダメージやK/Dなどはもちろん、[WoWS Stats & Numbers](https://asia.wows-numbers.com/){:target="_blank"} で採用されているPersonal Ratingや技能バッジ、Tier帯比・艦種比バーチャートなど**17種類の統計項目**に対応しています。
 
@@ -46,21 +46,21 @@ TonangoRadarは、[World of Warships](https://worldofwarships.com/){:target="_bl
 - 画面上部のツールバーから**左右/上下配置**、**高密度モード**、**K単位省略表示**、**UI倍率**、**Dark/Lightテーマ**を即座に切り替え可能
 - マッチ待機中でも**サンプルデータを使った事前プレビュー調整**に対応
 
-### ⚔️ チーム比較
+### {% include icon.html name="swords" %} チーム比較
 
 味方チームと敵チームの平均値を比較するチーム比較バーがあります。PR、ダメージ、勝率、戦闘数について「艦成績」「総合成績」の両方をゲージで一目瞭然に確認できます。
 
 ![TonangoRadar チーム比較]({{ '/assets/img/team_average.webp' | relative_url }})
 
-### 📜 戦闘履歴の自動保存・閲覧
+### {% include icon.html name="scroll-text" %} 戦闘履歴の自動保存・閲覧
 
 戦績取得が完了したマッチは自動的にローカルへ保存されます。後から「履歴」画面で過去の対戦一覧を確認し、当時の統計テーブルをいつでも再表示できます。
 
-### 🔄 アプリ内自動アップデート
+### {% include icon.html name="refresh-cw" %} アプリ内自動アップデート
 
 新バージョンが公開されるとアプリ起動時に自動検出され、設定画面からワンクリックで最新版へ更新できます（SHA-256チェックサムによる整合性検証付き）。
 
-### 🛠️ 容易なセットアップ
+### {% include icon.html name="wrench" %} 容易なセットアップ
 
 - **ランタイム不要**：Node.js や Python 等のランタイムを別途インストールする必要がありません
 - **Application ID 不要**：WG API の Application ID の取得は必要ありません

@@ -14,8 +14,10 @@ World of Warships 向け戦績レーダーアプリ「TonangoRadar」の公式�
 ## ディレクトリ・主要ファイル構成
 
 - `index.markdown`: トップページ（`permalink: /`, `nav_order: 0`）。各マニュアルページへの目次を掲載
-- `docs/`: マニュアル本文の Markdown ファイル群（番号プレフィックス付き: `01-about.md` 〜 `06-troubleshooting.md`）
+- `docs/`: マニュアル本文の Markdown ファイル群（番号プレフィックス付き: `01-about.md` 〜 `08-troubleshooting.md`）
 - `assets/img/`: スクリーンショットやアイコン等の画像アセット（`.webp` 形式）
+- `_data/lucide.yml`: ドキュメント内で使用する Lucide アイコンの SVG パス定義
+- `_includes/icon.html`: Lucide アイコンをインライン SVG として描画するパーシャル
 - `_includes/title.html`: サイトロゴとタイトル表示のカスタムパーシャル
 - `_sass/custom/custom.scss`: Just the Docs 向けのカスタム SCSS
 - `_config.yml`: サイト設定・テーマ設定・SEO/OGP デフォルト設定（※変更時はローカルサーバの再起動が必要）
@@ -66,15 +68,16 @@ nav_order: 1
 
 ### リンク・画像・記法
 
-- **内部リンク**: `{{ site.baseurl }}` を使用します（例: `[⚙️ 初期設定]({{ site.baseurl }}/setup/)`）。
+- **内部リンク**: `{{ site.baseurl }}` を使用します（例: `[{% include icon.html name="settings" %} 初期設定]({{ site.baseurl }}/setup/)`）。
 - **外部リンク**: Kramdown 属性 `{:target="_blank"}` を付与します（例: `[World of Warships](https://worldofwarships.com/){:target="_blank"}`）。
 - **画像**:
   - `assets/img/` 配下に **WebP 形式（`.webp`）** で配置します。
   - 参照時は `relative_url` フィルタを使用します（例: `![説明]({{ '/assets/img/example.webp' | relative_url }})`）。
   - スクリーンショットにプレイヤー名などの個人情報が含まれる場合は、モザイク等のマスキング処理を行ってください。
-- **文体・装飾**:
+- **アイコン・文体・装飾**:
   - サイト言語は日本語（`lang: ja-JP`）です。
-  - 見出し（`##` / `###`）には内容を直感的に表す絵文字を先頭に付けるのが既存ページのスタイルです（例: `## ✨ 主な特徴`）。
+  - **絵文字は使用しないでください**。見出し（`##` / `###`）やリンク等にアイコンが必要な場合は、`_includes/icon.html` を使って **Lucide** アイコンを挿入します（例: `## {% include icon.html name="sparkles" %} 主な特徴`）。
+  - 新しい Lucide アイコンを使う場合は、`_data/lucide.yml` に該当アイコンの SVG 要素を追記してください。
   - 補足や注意事項には Markdown の引用ブロック（`>`）を使用します。
 
 ## 変更時の注意事項

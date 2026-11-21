@@ -8,14 +8,14 @@ nav_order: 7
 
 # 表示色について
 
-## 🎯 レーティング別の文字色・しきい値
+## {% include icon.html name="target" %} レーティング別の文字色・しきい値
 
 以下の項目は、しきい値に基づいて8段階のレーティングカラーで色分け表示されます。
 
 - [Personal Rating - WoWS Stats & Numbers](https://asia.wows-numbers.com/personal/rating){:target="_blank"}（艦成績・総合成績）
 - ダメージ（**艦成績のみ**。サーバー期待値ダメージに対する比率で判定）
 - 勝率（艦成績・総合成績）
-- プレイヤー名（[🎛️ 表示設定]({{ site.baseurl }}/settings/) で「文字色タイプ」を `艦成績のPR` または `総合成績のPR` に設定した場合）
+- プレイヤー名（[{% include icon.html name="sliders-horizontal" %} 表示設定]({{ site.baseurl }}/settings/) で「文字色タイプ」を `艦成績のPR` または `総合成績のPR` に設定した場合）
 - 艦艇詳細モーダルの「目安ダメージ一覧表」（各艦のサーバー期待値から算出した基準ダメージ）
 
 ### レーティング・文字色・しきい値の対応表
@@ -33,10 +33,10 @@ nav_order: 7
 | Below Average | <span style="color: #FE7903">■</span> | `#FE7903` | 750 | 0.6 | 47 |
 | Bad | <span style="color: #FE0E00">■</span> | `#FE0E00` | 0 | 0 | 0 |
 
-> **🌓 テーマに応じた自動明暗調整について**  
+> **{% include icon.html name="sun-moon" %} テーマに応じた自動明暗調整について**  
 > 実際のアプリ画面では、選択中の配色テーマ（`dark` / `light`）の背景に対して文字が読みやすくなるよう、上記の基準カラーコードから自動で明るさ（`dark`時は明るく、`light`時は暗く）が調整されて表示されます。
 
-## 🏷️ クランタグ・バーチャートの配色
+## {% include icon.html name="tag" %} クランタグ・バーチャートの配色
 
 - **クランタグ**：クラン戦の所属リーグに基づく色（ゲーム内表示準拠）が適用されます（テーマに応じた明暗調整あり）。
 - **艦種比バーチャート**：左から以下の色で割合を表示します。
