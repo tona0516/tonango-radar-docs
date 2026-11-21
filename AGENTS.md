@@ -6,7 +6,7 @@
 
 World of Warships 向け戦績レーダーアプリ「TonangoRadar」の公式ユーザマニュアルサイトです。
 
-- **技術スタック**: Jekyll (`~> 4.4.1`) + [Just the Docs](https://just-the-docs.com/) テーマ + Ruby（CI 上は `4.0.1`、Bundler 管理）
+- **技術スタック**: Jekyll (`~> 4.4.1`) + [Just the Docs](https://just-the-docs.com/) テーマ + Ruby（CI 上は `4.0` 系、Bundler 管理）
 - **使用プラグイン**: `jekyll-feed`, `jekyll-sitemap`, `jekyll-seo-tag`
 - **デプロイ**: `main` ブランチへの push により `.github/workflows/jekyll.yml` が実行され、GitHub Pages へ自動ビルド・デプロイされます
 - **公開 URL**: `https://tona0516.github.io/tonango-radar-docs/`（`baseurl: "/tonango-radar-docs"`）
