@@ -1,57 +1,56 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
+# このワークフローは GitHub 認定外のアクションを使用しています。
+# サードパーティによって提供されており、別途の利用規約、プライバシーポリシー、
+# およびサポートドキュメントが適用されます。
 
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
+# Jekyll サイトをビルドして GitHub Pages にデプロイするサンプルワークフロー
 name: Deploy Jekyll site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  # デフォルトブランチへの push 時に実行
   push:
     branches: ["main"]
 
-  # Allows you to run this workflow manually from the Actions tab
+  # Actions タブから手動実行できるようにする
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+# GitHub Pages へのデプロイを許可するための GITHUB_TOKEN 権限設定
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# 同時デプロイは 1 件のみ許可し、実行中のジョブと最新の待機中ジョブの間にキューされた実行はスキップする。
+# ただし、本番デプロイを完了させるため、実行中のジョブはキャンセルしない。
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Build job
+  # ビルドジョブ
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '4.0' # Not needed with a .ruby-version file
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-          cache-version: 0 # Increment this number if you need to re-download cached gems
+          ruby-version: '4.0' # .ruby-version ファイルがある場合は不要
+          bundler-cache: true # 'bundle install' を実行し、インストールされた gem を自動キャッシュする
+          cache-version: 0 # キャッシュ済み gem を再ダウンロードしたい場合はこの数値を増やす
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Build with Jekyll
-        # Outputs to the './_site' directory by default
+        # デフォルトでは './_site' ディレクトリに出力される
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
       - name: Upload artifact
-        # Automatically uploads an artifact from the './_site' directory by default
-        uses: actions/upload-pages-artifact@v3
+        # デフォルトで './_site' ディレクトリからアーティファクトを自動アップロードする
+        uses: actions/upload-pages-artifact@v5
 
-  # Deployment job
+  # デプロイジョブ
   deploy:
     environment:
       name: github-pages
@@ -61,4 +60,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
